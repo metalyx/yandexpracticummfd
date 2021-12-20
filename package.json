@@ -2,14 +2,17 @@
   "name": "chat",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "dependencies": {
-    "parcel": "^2.0.1"
+    "parcel": "^2.0.1",
+    "pug": "^3.0.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.0.1"
+  },
   "scripts": {
-    "dev": "./node_modules/.bin/parcel index.html",
-    "build": "./node_modules/.bin/parcel build index.html",
+    "dev": "./node_modules/.bin/parcel src/index.pug",
+    "build": "./node_modules/.bin/parcel build src/index.pug",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
